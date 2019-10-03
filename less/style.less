@@ -4,10 +4,15 @@
 
 .container {
     max-width: 1440px;
+    background-color: #fcf8fe;
+}
+.container--small {
+    max-width: 1257px;
 }
 
 @font_color: #8B7EAC;  
 @btn_color:  #E65C7B;
+@mark_color: rgba(174, 164, 200, 0.5);
 
 .medium {
     font-family: 'Open Sans', sans-serif;
@@ -42,25 +47,62 @@
     margin: -8px -10px;
 }
 
+.mark {
+    display: inline-block;
+    float: right;
+    vertical-align: middle;
+    background: none;
+    .bold;
+    font-size: 30px;
+    color: @mark_color;
+    margin-right: -15px;
+    padding: 0;
+    hr {
+        display: inline-block;
+        border-top: 1px solid rgba(139, 126, 172, 0.73);
+        height: 0;
+        width: 50px;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+}
+
 .header {
     background-image: url(../img/main_background.png);
     background-size: cover;
+    box-sizing: border-box;
+    height: 903px;
     padding-top: 30px;
-    padding-bottom: 66px;
     &__bar {        
         display: flex;
         justify-content: space-between;
         margin-bottom: 100px;
+        &__menu {
+            height: 25px;
+        }
         &__menu span, &__menu p, &__phone a{
             display: inline-block;
             font-size: 16px;
             .medium;
             cursor: pointer;
+            margin-bottom: 0;
         }
 
-        &__menu span {
-            font-size: 18px;
-            font-weight: 300;
+        &__menu span{
+            hr{
+                width: 24px;
+                background-color: #8e80a9;
+                height: 0px;
+                text-align: left;
+                margin: 4px;
+                padding: 0;
+            }
+            .unique {
+                width: 15px;
+                margin-bottom: 6px;
+            }
+            
+
         }
 
         &__phone a:hover {
@@ -105,7 +147,221 @@
     &__icons img:last-child {
         margin-right: 0;
     }
+            
+    .mark {
+        margin-top: -355px;
+    }
+}
+
+.directions {
+    position: absolute;
+    .mark {
+        margin-top: -455px;
+    }
+}
+.pattern {
+    margin: -200px auto 0;
+    background-image: url(../img/pattern.png);
+    width: 1257px;
+    height: 722px;
+    padding: 0 199px 86px 133px;
+    &__header {
+        text-align: center;
+        font-size: 30px;
+        color: @font_color;
+        .medium;
+        font-weight: 700;
+        margin-bottom: 65px;
+        
+    }
+}
+
+.side {
+    &--left {
+        .card {
+            background-color: #ffffff;
+            border: none;
+            width: 366px;
+            &__row {
+                display: flex;
+                width: 366px;
+            }
+            &__info {
+                padding-top: 42px;
+                padding-left: 46px;
+                flex-basis: 86%;
+            }
+            &__btn {
+                flex-basis: 15%;
+                .btn__angle {
+                    margin-left: 24px;
+                }
+            }
+        }
+    }
+
+    &--right {
+        .card {
+            width: 525px;
+            height: 180px;
+            box-sizing: border-box;
+            border: none;
+            margin-bottom: 28px;
+            &__row {
+                display:flex;
+                img{
+                    height: 180px;
+                } 
+                &--shadow {
+                    box-shadow: 0 4px 25px rgba(142,128,169,.2);
+                    width: 305px;
+                    height: 180px;
+                    display: flex;
+                }
+            }
+            &__info {
+                flex-basis: 85%;
+                padding: 35px 0px 14px 36px;
+            }
+            &__btn {
+                width: 45px;
+                height: 30px;
+                margin-top: 115px;
+                margin-right: 34px;
+                .btn__angle {
+                    margin-left: 17px;
+                }                
+            }            
+        }
+    }
+
+    &__btn {
+        width: 100%;
+        height: 48px;
+        border:none;
+        &--shadow {
+            box-shadow: 0 4px 25px rgba(142,128,169,.2);
+        } 
+        .medium;
+        color: @font_color;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 20px;
+        padding: 0;
+        background-color: #fff;
+    }
+}
+
+.card__info__text {
+    color: @font_color;
+    h3 {
+        .bold;
+        font-size: 16px;
+    }
+    p {
+        .medium;
+        font-size: 12px;
+    }
+    .text__name {
+        color: @btn_color;
+    }
+  
+}
+
+.card__btn {
+    border: none;
+    padding: 0;
+    background-color: @font_color;
+    .btn__angle {
+        border: 8px solid transparent;
+        border-left: 8px solid #fff;
+    }
+    .angle {
+        border: 6px solid transparent;
+        border-left: 6px solid @font_color;  
+        margin: -6px -8px;
+    }
+}
+
+.card__row--shadow {
+    box-shadow: 0 4px 25px rgba(142,128,169,.2);
 }
 
 
+
+
+/*.pattern {
+    background-image: url(../img/pattern.png);
+    background-size: cover;
+    width: 1257px;
+    height: 722px;
+    padding: 0 199px 86px 133px;
+    margin: 0 auto;
+    &__header {
+        margin-bottom: 65px;
+        .medium;
+        color: @font_color;
+        font-size: 30px;
+        text-align: center;
+    }
+    &__card {
+        float: right;
+        background-color: #fff;
+        
+        &--right{
+            display: inline-block;
+            width: 525px;
+        }
+        &__info {
+            
+            display: inline-block;
+            h3 {
+                margin-left: 34px;
+                margin-top: 42px;
+                .medium;
+                color: @font_color;
+                font-size: 16px;
+            }
+            p {
+                margin-left: 34px;
+                .medium;
+                font-size: 12px;
+                color: @font_color
+            } 
+        }
+        &--left {
+            float: left;
+            margin-right: 34px;
+            
+            .pattern__card {
+                .intro {
+                    display: flex;
+                } 
+                &__info {
+                    flex-basis: 85%;
+                    height: 182px;
+                    p,h3 {
+                        margin-left: 46px;
+                    }
+                }
+                &__btn {
+                    .card__btn{
+                        text-align: right;
+                        width: 64px;
+                        height: 182px;
+                        border: none;
+                        background-color: @font_color;
+                        padding: 0;
+                    }                    
+                }
+            }
+        }
+    }    
+}
+
+.card {
+    &__name {
+        color: @btn_color;
+    }
+}*/
 
