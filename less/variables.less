@@ -1,0 +1,63 @@
+.container {
+    max-width: 1440px;
+    background-color: #fcf8fe;
+}
+.container--small {
+    max-width: 1257px;
+}
+
+@font_color: #8B7EAC;  
+@btn_color:  #E65C7B;
+@mark_color: rgba(174, 164, 200, 0.5);
+
+.medium {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: @font_color;
+}
+
+.bold {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+}
+
+.btn--coral {
+    background-color: @btn_color;
+    color: #fff;
+    border: none;
+    color: @font_color;
+}
+
+.btn__angle {
+    width: 10px;
+    height: 10px;
+    border: 10px solid transparent;
+    border-left: 10px solid #fff;
+}
+
+.angle {
+    width: 8px;
+    height: 8px;
+    border: 8px solid transparent;
+    border-left: 8px solid @btn_color;
+    margin: -8px -10px;
+}
+
+.mark {
+    float: right;
+    vertical-align: middle;
+    background: none;
+    .bold;
+    font-size: 30px;
+    color: @mark_color;
+    margin-right: -15px;
+    padding: 0;
+    hr {
+        display: inline-block;
+        border-top: 1px solid rgba(139, 126, 172, 0.73);
+        height: 0;
+        width: 50px;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+}
