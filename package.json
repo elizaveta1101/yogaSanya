@@ -1,0 +1,6 @@
+{
+    "name": "yoga",
+    "scripts": {
+        "start": "http-server -o -p 4201"
+    }
+}
