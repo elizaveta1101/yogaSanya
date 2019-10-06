@@ -2,7 +2,7 @@
     "name": "yoga",
     "scripts": {
         "compile": "less-watch-compiler --config=less-watch-compiler.config.json",
-        "sync": "cd src && browser-sync start --open 5001  --port 5001 -—server —-index 'index.html' --files '*/*.*'",
+        "sync": "cd src && browser-sync start ---config ../bs-config.js",
         "start": "concurrently -n less-compiler,server 'npm run compile' 'npm run sync'"
     },
     "devDependencies": {
