@@ -62,6 +62,7 @@ img {
   position: relative;
 }
 .header__background {
+  z-index: -9999999;
   position: absolute;
   top: 0;
   left: 0;
@@ -159,6 +160,7 @@ img {
   height: auto;
 }
 .pattern__background {
+  z-index: -9999999;
   position: absolute;
   top: -130px;
 }
@@ -286,6 +288,7 @@ img {
   max-height: 640px;
 }
 .subscription__background {
+  z-index: -9999999;
   position: absolute;
   top: 0;
   left: 0;
@@ -405,6 +408,7 @@ img {
   text-align: center;
 }
 .team__background {
+  z-index: -9999999;
   position: absolute;
 }
 .team__background--left {
