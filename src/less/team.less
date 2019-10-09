@@ -1,0 +1,34 @@
+@import "variables";
+
+.team {
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
+
+    &__background {
+        position: absolute;
+        
+        &--left {
+            top: 0;
+            left: 0;
+        }
+
+        &--right {
+            top: 0;
+            right: 0;
+        }
+    }
+
+    &__data {
+        margin-left: auto;
+        margin-right: auto;
+
+        &__header {
+            font-size: 30px;
+            color: @font_color;
+            .medium;
+            font-weight: 700;
+            margin-bottom: 65px;
+        }
+    }
+}
