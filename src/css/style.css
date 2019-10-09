@@ -1,6 +1,5 @@
 .container {
   max-width: 1440px;
-  background-color: #fcf8fe;
 }
 .container--small {
   max-width: 1200px;
@@ -58,7 +57,6 @@ img {
   margin-left: 10px;
 }
 .header {
-  box-sizing: border-box;
   height: 850px;
   padding-top: 30px;
   position: relative;
@@ -155,7 +153,8 @@ img {
 }
 .pattern {
   position: relative;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding-bottom: 100px;
   height: auto;
 }
@@ -177,7 +176,8 @@ img {
   margin-bottom: 65px;
 }
 .pattern .row {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 900px;
   max-height: 720px;
 }
@@ -279,6 +279,157 @@ img {
 .card__row--shadow {
   box-shadow: 0 4px 25px rgba(142, 128, 169, 0.2);
 }
+.subscription {
+  position: relative;
+  text-align: center;
+  height: auto;
+  max-height: 640px;
+}
+.subscription__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.subscription__data {
+  margin-left: auto;
+  margin-right: auto;
+}
+.subscription__data__header {
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  font-weight: 700;
+  margin-bottom: 65px;
+}
+.subscription__data__month {
+  margin-bottom: 50px;
+}
+.subscription__data__month p {
+  display: inline-block;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  text-decoration: none;
+  color: #E65C7B;
+  margin-right: 50px;
+  line-height: 20px;
+}
+.subscription__data__month p:last-child {
+  margin-right: 0;
+}
+.subscription__data__month p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.subscription__data__cards {
+  max-width: 930px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.subscription__data__cards .row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.subscription__data__cards .row .card {
+  border: none;
+  border-radius: 0;
+  padding-top: 50px;
+}
+.subscription__data__cards .row .card--shadow {
+  box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+}
+.subscription__data__cards .row .card--small {
+  width: 260px;
+  height: 240px;
+}
+.subscription__data__cards .row .card--small button {
+  display: none;
+}
+.subscription__data__cards .row .card--big {
+  width: 330px;
+  height: 330px;
+}
+.subscription__data__cards .row .card__header {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.subscription__data__cards .row .card__time {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  font-size: 12px;
+  color: #E65C7B;
+  margin-bottom: 25px;
+}
+.subscription__data__cards .row .card__price {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  font-size: 30px;
+}
+.subscription__data__cards .row .card__btn {
+  width: 220px;
+  height: 50px;
+  background-color: #8B7EAC;
+  padding: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  font-size: 12px;
+  color: #fff;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.subscription__data__cards .six_month {
+  display: none;
+}
+.subscription__data__cards .twelve_month {
+  display: none;
+}
+.subscription .mark {
+  margin-top: -270px;
+}
+.team {
+  position: relative;
+  margin-top: 100px;
+  text-align: center;
+}
+.team__background {
+  position: absolute;
+}
+.team__background--left {
+  top: 0;
+  left: 0;
+}
+.team__background--right {
+  top: 0;
+  right: 0;
+}
+.team__data {
+  margin-left: auto;
+  margin-right: auto;
+}
+.team__data__header {
+  font-size: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  font-weight: 700;
+  margin-bottom: 65px;
+}
 * {
   box-sizing: border-box;
+}
+body {
+  background-color: #fcf8feff;
 }
