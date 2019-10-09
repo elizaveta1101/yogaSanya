@@ -1,24 +1,38 @@
 @import "variables";
 .directions {
-    position: absolute;
+    
     .mark {
-        margin-top: -455px;
+        margin-top: -410px;
     }
 }
 .pattern {
-    margin: -200px auto 0;
-    background-image: url(../img/pattern.png);
-    width: 1257px;
-    height: 722px;
-    padding: 0 199px 86px 133px;
+    position: relative;
+    margin: 0 auto;
+    padding-bottom: 100px; 
+    height: auto;
+
+    &__background {
+        position: absolute;
+        top: -130px;
+    }
+
     &__header {
+        position: absolute;
+        transform: translateX(-50%);
+        top: -100px;
+        left: 50%;
         text-align: center;
         font-size: 30px;
         color: @font_color;
         .medium;
         font-weight: 700;
         margin-bottom: 65px;
-        
+    }
+
+    .row {
+        margin: auto;
+        max-width: 900px;
+        max-height: 720px;
     }
 }
 
@@ -27,20 +41,25 @@
         .card {
             background-color: #ffffff;
             border: none;
-            width: 366px;
+            width: 100%;
+            height: 100%;
+
             &__row {
                 display: flex;
-                width: 366px;
+                width: 100%;
+                height: 100%;
             }
+
             &__info {
-                padding-top: 42px;
-                padding-left: 46px;
-                flex-basis: 86%;
+                padding-top: 40px;
+                padding-left: 45px;
+                flex-basis: 85%;
             }
+
             &__btn {
                 flex-basis: 15%;
                 .btn__angle {
-                    margin-left: 24px;
+                    margin-left: 45%;
                 }
             }
         }
@@ -48,34 +67,32 @@
 
     &--right {
         .card {
-            width: 525px;
-            height: 180px;
             box-sizing: border-box;
             border: none;
-            margin-bottom: 28px;
+            margin-bottom: 25px;
+
             &__row {
                 display:flex;
-                img{
-                    height: 180px;
-                } 
+
                 &--shadow {
                     box-shadow: 0 4px 25px rgba(142,128,169,.2);
-                    width: 305px;
-                    height: 180px;
+                    width: 100%;
                     display: flex;
                 }
             }
+
             &__info {
                 flex-basis: 85%;
                 padding: 35px 0px 14px 36px;
             }
+
             &__btn {
                 width: 45px;
                 height: 30px;
                 margin-top: 115px;
-                margin-right: 34px;
+                margin-right: 35px;
                 .btn__angle {
-                    margin-left: 17px;
+                    margin-left: 40%;
                 }                
             }            
         }
@@ -85,9 +102,11 @@
         width: 100%;
         height: 48px;
         border:none;
+
         &--shadow {
             box-shadow: 0 4px 25px rgba(142,128,169,.2);
         } 
+
         .medium;
         color: @font_color;
         font-size: 12px;
@@ -100,14 +119,17 @@
 
 .card__info__text {
     color: @font_color;
+
     h3 {
         .bold;
         font-size: 16px;
     }
+
     p {
         .medium;
         font-size: 12px;
     }
+
     .text__name {
         color: @btn_color;
     }
@@ -118,10 +140,12 @@
     border: none;
     padding: 0;
     background-color: @font_color;
+
     .btn__angle {
         border: 8px solid transparent;
         border-left: 8px solid #fff;
     }
+    
     .angle {
         border: 6px solid transparent;
         border-left: 6px solid @font_color;  

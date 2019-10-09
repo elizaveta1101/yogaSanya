@@ -3,7 +3,7 @@
     "scripts": {
         "compile": "less-watch-compiler --config=less-watch-compiler.config.json",
         "sync": "cd src && browser-sync start ---config ../bs-config.js",
-        "start": "concurrently -n less-compiler,server 'npm run compile' 'npm run sync'"
+        "start": "npx concurrently -n less-compiler,server \"npm run compile\" \"npm run sync\""
     },
     "devDependencies": {
         "browser-sync": "^2.26.7",
