@@ -1,0 +1,52 @@
+@import "variables";
+
+.review {
+    margin-left: auto;
+    margin-right: auto;
+
+    &__header {
+        .medium;
+        font-size: 30px;
+    }
+
+    &__slider {
+
+        &__btn {
+            width: 45px;
+            height: 30px;
+            background-color: @font_color;
+
+            &--prev {
+                
+                .btn__angle {
+                    border-left: none;
+                    border-right: 10px solid #fff;
+                    margin-left: 10px;
+                }
+
+                .angle {
+                    border-left: none;
+                    border-right: 8px solid @font_color;
+                    margin: -8px 2px;
+                }
+
+            }
+
+            &--next {
+                .btn__angle {
+                    margin-left: 10px;
+                }
+                .angle {
+                    border-left: 8px solid @font_color;
+                }
+            }
+        }
+
+        &__card {
+            max-width: 440px;
+            max-height: 310px;
+            background-color: #fff;
+            
+        }
+    }
+}

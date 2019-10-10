@@ -406,6 +406,7 @@ img {
   position: relative;
   margin-top: 100px;
   text-align: center;
+  height: auto;
 }
 .team__background {
   z-index: -9999999;
@@ -422,6 +423,8 @@ img {
 .team__data {
   margin-left: auto;
   margin-right: auto;
+  max-height: 700px;
+  max-width: 970px;
 }
 .team__data__header {
   font-size: 30px;
@@ -430,6 +433,159 @@ img {
   color: #8B7EAC;
   font-weight: 700;
   margin-bottom: 65px;
+}
+.team__data__workers .worker {
+  position: relative;
+  margin-bottom: 30px;
+  height: 160px;
+}
+.team__data__workers .worker:last-child {
+  margin-bottom: 0;
+}
+.team__data__workers .worker__photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
+.team__data__workers .worker__card {
+  position: absolute;
+  top: 50px;
+  left: 25px;
+  background-color: #fff;
+  max-width: 400px;
+  max-height: 110px;
+  width: 100%;
+  height: auto;
+  padding: 20px 25px 20px 140px;
+  box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+}
+.team__data__workers .worker__card .row {
+  height: 60px;
+  margin-bottom: 10px;
+}
+.team__data__workers .worker__card .row .side {
+  font-size: 12px;
+}
+.team__data__workers .worker__card .row .side--left {
+  text-align-last: left;
+}
+.team__data__workers .worker__card .row .side--left .name {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  color: #E65C7B;
+}
+.team__data__workers .worker__card .row .side--left .direction {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  margin: 0;
+}
+.team__data__workers .worker__card .row .side--right {
+  text-align: right;
+}
+.team__data__workers .worker__card .row .side--right a .icon {
+  margin-bottom: 40px;
+}
+.team__data__workers .worker__card .row .side--right a .icon--left {
+  margin-right: 10px;
+}
+.team__data__workers .worker__card .row .side--right .link {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  text-decoration: underline;
+}
+.team__data__achievements .worker {
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  display: none;
+}
+.team__data__achievements .worker__name {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+.team__data__achievements .worker__experience {
+  font-size: 14px;
+  color: #E65C7B;
+  margin-bottom: 25px;
+}
+.team__data__achievements .worker__achievements {
+  font-size: 12px;
+}
+.team__data__achievements .worker--visible {
+  display: block;
+}
+.team__data .slider {
+  margin-top: 40px;
+  float: right;
+  margin-right: 45px;
+  max-width: 150px;
+  width: 100%;
+}
+.team__data .slider .row {
+  width: 100%;
+  justify-content: space-between;
+  margin: 0;
+}
+.team__data .slider__btn {
+  border: 1px solid #8B7EAC;
+  width: 45px;
+  height: 30px;
+  background-color: #8B7EAC;
+}
+.team__data .slider__btn--prev {
+  background-color: #fcf8feff;
+}
+.team__data .slider__btn--prev .btn__angle {
+  border-left: none;
+  border-right: 10px solid #8B7EAC;
+  margin-left: 10px;
+}
+.team__data .slider__btn--prev .angle {
+  border-left: none;
+  border-right: 8px solid #fcf8feff;
+  margin: -8px 2px;
+}
+.team__data .slider__btn--next .btn__angle {
+  margin-left: 10px;
+}
+.team__data .slider__btn--next .angle {
+  border-left: 8px solid #8B7EAC;
+}
+.team__data .slider__number {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  font-size: 16px;
+  display: inline-block;
+}
+.team__data .slider__all {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  font-size: 13px;
+  display: inline-block;
+}
+.team__data .slider__info {
+  max-width: 35px;
+  width: 100%;
+}
+.team__data .slider__info .divider {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  font-size: 17px;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: 300;
 }
 * {
   box-sizing: border-box;

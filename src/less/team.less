@@ -4,6 +4,7 @@
     position: relative;
     margin-top: 100px;
     text-align: center;
+    height: auto; 
 
     &__background {
         z-index: -9999999;
@@ -23,13 +24,188 @@
     &__data {
         margin-left: auto;
         margin-right: auto;
-
+        max-height: 700px;
+        max-width: 970px;
         &__header {
             font-size: 30px;
             color: @font_color;
             .medium;
             font-weight: 700;
             margin-bottom: 65px;
+        }
+
+        &__workers {
+            .worker {
+                position: relative;
+                margin-bottom: 30px;
+                height: 160px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &__photo {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 99999;
+                }
+
+                &__card {
+                    position: absolute;
+                    top: 50px;
+                    left: 25px;
+                    background-color: #fff;
+                    max-width: 400px;
+                    max-height: 110px;
+                    width: 100%;
+                    height:auto;
+                    padding: 20px 25px 20px 140px;
+                    box-shadow: @shadow;
+
+                    .row {
+                        height: 60px;
+                        margin-bottom: 10px;
+
+                        .side {
+                            font-size: 12px;
+
+                            &--left {
+                                text-align-last: left;
+
+                                .name {
+                                    .medium;
+                                    color: @btn_color;
+                                }
+
+                                .direction {
+                                    .medium;
+                                    margin: 0;
+                                }
+                            }
+
+                            &--right {
+                                text-align: right;
+
+                                a .icon {
+                                    margin-bottom: 40px;
+
+                                    &--left {
+                                        margin-right: 10px;
+                                    }
+                                } 
+
+                                .link {
+                                    .medium;
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }   
+        }
+
+        &__achievements {
+            .worker {
+                text-align: left;
+                .medium;
+                display:none;
+
+                &__name {
+                    .bold;
+                    font-size: 18px;
+                    margin-bottom: 10px;
+                    margin-top: 50px;
+                }
+
+                &__experience {
+                    font-size: 14px;
+                    color: @btn_color;
+                    margin-bottom: 25px;
+                }
+
+                &__achievements {
+                    font-size: 12px;
+                }
+
+                &--visible {
+                    display: block;
+                }
+            }
+        }
+
+        .slider {
+            margin-top: 40px;
+            float: right;
+            margin-right: 45px;
+            max-width: 150px;
+            width: 100%;
+
+            .row {
+                //max-width: 150px;
+                width: 100%;
+                justify-content: space-between;
+                margin: 0;
+            }
+            
+            &__btn {
+                border: 1px solid @font_color;
+                width: 45px;
+                height: 30px;
+                background-color: @font_color;
+
+                &--prev {
+                    background-color: #fcf8feff;
+                    
+                    .btn__angle {
+                        border-left: none;
+                        border-right: 10px solid @font_color;
+                        margin-left: 10px;
+                    }
+
+                    .angle {
+                        border-left: none;
+                        border-right: 8px solid #fcf8feff;
+                        margin: -8px 2px;
+                    }
+
+                }
+
+                &--next {
+                    .btn__angle {
+                        margin-left: 10px;
+                    }
+                    .angle {
+                        border-left: 8px solid @font_color;
+                    }
+                }
+            }
+
+            &__number {
+                .medium;
+                font-size: 16px;
+                display: inline-block;
+            }
+
+            &__all {
+                .medium;
+                font-size: 13px;
+                display: inline-block;
+            }
+            &__info {
+                max-width: 35px;
+                width: 100%;
+                
+                .divider {
+                    display: inline-block;
+                    .medium;
+                    font-size: 17px;
+                    margin-left: 0;
+                    margin-right: 0;
+                    font-weight: 300;
+                }
+            }
         }
     }
 }
