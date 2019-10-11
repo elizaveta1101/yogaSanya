@@ -17,12 +17,15 @@ img {
 .bold {
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
+  color: #8B7EAC;
 }
 .btn--coral {
   background-color: #E65C7B;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
   color: #fff;
   border: none;
-  color: #8B7EAC;
 }
 .btn__angle {
   width: 10px;
@@ -43,6 +46,7 @@ img {
   background: none;
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
+  color: #8B7EAC;
   font-size: 30px;
   color: rgba(174, 164, 200, 0.5);
   margin-right: -15px;
@@ -253,6 +257,7 @@ img {
 .card__info__text h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
+  color: #8B7EAC;
   font-size: 16px;
 }
 .card__info__text p {
@@ -423,7 +428,7 @@ img {
 .team__data {
   margin-left: auto;
   margin-right: auto;
-  max-height: 700px;
+  max-height: 800px;
   max-width: 970px;
 }
 .team__data__header {
@@ -507,6 +512,7 @@ img {
 .team__data__achievements .worker__name {
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
+  color: #8B7EAC;
   font-size: 18px;
   margin-bottom: 10px;
   margin-top: 50px;
@@ -586,6 +592,193 @@ img {
   margin-left: 0;
   margin-right: 0;
   font-weight: 300;
+}
+.team .mark {
+  margin-top: -350px;
+}
+.review {
+  margin: 140px auto;
+}
+.review__header {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 65px;
+}
+.review__slider .row {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  justify-content: space-between;
+}
+.review__slider__btn {
+  position: absolute;
+  z-index: 9999;
+  width: 45px;
+  height: 30px;
+  background-color: #8B7EAC;
+  border: none;
+  top: 50%;
+}
+.review__slider__btn--prev {
+  left: -2%;
+}
+.review__slider__btn--prev .btn__angle {
+  border-left: none;
+  border-right: 10px solid #fff;
+  margin-left: 10px;
+}
+.review__slider__btn--prev .angle {
+  border-left: none;
+  border-right: 8px solid #8B7EAC;
+  margin: -8px 2px;
+}
+.review__slider__btn--next {
+  right: -2%;
+}
+.review__slider__btn--next .btn__angle {
+  margin-left: 10px;
+}
+.review__slider__btn--next .angle {
+  border-left: 8px solid #8B7EAC;
+}
+.review__slider__card {
+  max-width: 440px;
+  max-height: 310px;
+  background-color: #fff;
+  padding: 30px 60px 20px 90px;
+}
+.review__slider__card .row {
+  max-width: 150px;
+  margin-left: 0;
+  margin-right: auto;
+}
+.review__slider__card .card__text {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  font-size: 12px;
+  margin-top: 15px;
+}
+.review__slider__card .card__name {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  font-size: 12px;
+  color: #E65C7B;
+  margin: 0;
+}
+.review__slider__card .card__date {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  font-size: 10px;
+  margin: 0;
+}
+.review__slider__card--shadow {
+  box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+}
+.review .mark {
+  margin-top: -180px;
+}
+.contacts {
+  background-image: url(../img/footer_background.png);
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  margin-top: 70px;
+}
+.contacts .container--small {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+.contacts .container--small .side {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 100px;
+}
+.contacts .container--small .side--left {
+  float: left;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  font-size: 14px;
+  margin-top: 150px;
+}
+.contacts .container--small .side--right {
+  float: right;
+}
+.contacts .container--small .side--right form input[placeholder] {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  font-size: 14px;
+  color: rgba(142, 128, 169, 0.8);
+}
+.contacts .container--small .side--right form .form__header {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+  color: #8B7EAC;
+  font-size: 28px;
+  margin-top: 70px;
+}
+.contacts .container--small .side--right form .form__name,
+.contacts .container--small .side--right form .form__phone,
+.contacts .container--small .side--right form .form__name::placeholder,
+.contacts .container--small .side--right form .form__phone::placeholder {
+  width: 400px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #8B7EAC;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+.contacts .container--small .side--right form .form__name {
+  margin-top: 30px;
+}
+.contacts .container--small .side--right form .form__btn {
+  width: 400px;
+  height: 55px;
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+}
+.address,
+.phone {
+  margin-bottom: 20px;
+}
+.footer {
+  width: 100%;
+  height: 80px;
+  background-color: #8373A1;
+  padding-top: 30px;
+}
+.footer .row {
+  width: 100%;
+}
+.link,
+.politic {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #8B7EAC;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+}
+.link:hover,
+.politic:hover,
+.link:visited,
+.politic:visited,
+.link:link,
+.politic:link {
+  color: rgba(255, 255, 255, 0.5);
 }
 * {
   box-sizing: border-box;
