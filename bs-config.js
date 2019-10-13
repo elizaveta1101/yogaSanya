@@ -29,7 +29,7 @@ module.exports = {
     "server": true,
     "index": "index.html",
     "proxy": false,
-    "port": 5010,
+    "port": 5001,
     "middleware": false,
     "serveStatic": [],
     "ghostMode": {
