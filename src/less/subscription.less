@@ -1,37 +1,28 @@
 @import "variables";
 
 .subscription {
-    position: relative;
+    background: url(../img/background3.png) center center no-repeat;
+    background-size: cover;
     text-align: center;
     height: auto;
-    max-height: 640px;
+    height: 640px;
+    position: relative;
     
-    &__background {
-        z-index: -9999999;
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
     &__data {
         margin-left: auto;
         margin-right: auto;
 
         &__header {
             font-size: 30px;
-            color: @font_color;
-            .medium;
             font-weight: 700;
             margin-bottom: 65px;
         }
-
         &__month {
             margin-bottom: 50px;
-            
+
             p {
                 display: inline-block;
                 font-size: 12px;
-                .medium;
                 text-decoration: none;
                 color: @btn_color;
                 margin-right: 50px;
@@ -40,14 +31,12 @@
                 &:last-child {
                     margin-right: 0;
                 }
-
                 &:hover {
                     text-decoration: underline;
                     cursor: pointer;
                 }
             }
         }
-
         &__cards {
             max-width: 930px;
             margin-left: auto;
@@ -60,73 +49,52 @@
                 max-width: 900px;
                 margin-left: auto;
                 margin-right: auto;
-
-                .card {
-                    border: none;
-                    border-radius: 0;
-                    padding-top: 50px;
-
-                    &--shadow {
-                        box-shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
-                    }
-
-                    &--small {
-                        width: 260px;
-                        height: 240px;
-                        button {
-                            display: none;
-                        }
-                    }
-
-                    &--big {
-                        width: 330px;
-                        height: 330px;
-                    }
-
-                    &__header {
-                        .medium;
-                        font-size: 18px;
-                        margin-bottom: 20px;
-                    }
-
-                    &__time {
-                        .medium;
-                        font-size: 12px;
-                        color: @btn_color;
-                        margin-bottom: 25px;
-                    }
-
-                    &__price {
-                        .medium;
-                        font-size: 30px;
-                    }
-
-                    &__btn {
-                        width: 220px;
-                        height: 50px;
-                        background-color: @font_color;
-                        padding: 15px;
-                        .medium;
-                        font-size: 12px;    
-                        color: #fff;
-                        margin-top: 35px;
-                        margin-left: auto;
-                        margin-right: auto;
-                    }
-                }
             }
-
             .six_month {
                 display: none;
             }
-
             .twelve_month {
                 display: none;
             }
         }
     }
-
     .mark {
-        margin-top: -270px;
+        transform: translateY(-50%);
+        top: 50%;
+    }
+}
+
+.subscriptionCard {
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    padding-top: 50px;
+
+    &__header {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    &__time {
+        font-size: 12px;
+        color: @btn_color;
+        margin-bottom: 25px;
+    }
+    &__price {
+        font-size: 30px;
+    }
+    &__btn {
+        border: none;
+        width: 220px;
+        height: 50px;
+        background-color: @font_color;
+        padding: 15px;
+        font-size: 12px;    
+        color: #fff;
+        margin-top: 35px;
+        margin-left: auto;
+        margin-right: auto;
+        &:hover {
+            background-color: @font_color--hover;
+        }
     }
 }

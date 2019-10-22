@@ -1,8 +1,12 @@
 .container {
-    max-width: 1440px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .container--small {
     max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img {
@@ -14,8 +18,19 @@ img {
 
 @font_color: #8B7EAC;  
 @btn_color:  #E65C7B;
+@btn_color--hover: #E11745;
+@font_color--hover: #6D4793;
 @mark_color: rgba(174, 164, 200, 0.5);
 @shadow: 0px 4px 25px rgba(142, 128, 169, 0.2);
+
+
+//---------для медиа запросов----------
+
+@phone: 320px;
+@tablet: 768px;
+@desktop: 1440px;
+
+//--------------------------
 
 .medium {
     font-family: 'Open Sans', sans-serif;
@@ -29,9 +44,12 @@ img {
     color: @font_color;
 }
 
+* {
+    .medium;
+}
+
 .btn--coral {
     background-color: @btn_color;
-    .medium;
     color: #fff;
     border: none;
 
@@ -53,13 +71,14 @@ img {
 }
 
 .mark {
-    float: right;
-    vertical-align: middle;
+    position: absolute;
+    right: 0;
+    display: block;
+    margin: 0;
     background: none;
     .bold;
     font-size: 30px;
     color: @mark_color;
-    margin-right: -15px;
     padding: 0;
     hr {
         display: inline-block;
@@ -69,4 +88,15 @@ img {
         vertical-align: middle;
         margin-left: 10px;
     }
+
+    
+}
+
+.card--shadow {
+    box-shadow: @shadow;
+    width: 100%;
+}
+
+.btn--shadow {
+    box-shadow: @shadow;
 }

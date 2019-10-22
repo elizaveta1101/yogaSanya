@@ -9,31 +9,25 @@
     &__background {
         z-index: -9999999;
         position: absolute;
-        
+        top: 0;
         &--left {
-            top: 0;
             left: 0;
         }
-
         &--right {
-            top: 0;
             right: 0;
         }
     }
-
     &__data {
         margin-left: auto;
         margin-right: auto;
         max-height: 800px;
         max-width: 970px;
+
         &__header {
             font-size: 30px;
-            color: @font_color;
-            .medium;
             font-weight: 700;
             margin-bottom: 65px;
         }
-
         &__workers {
             .worker {
                 position: relative;
@@ -43,7 +37,6 @@
                 &:last-child {
                     margin-bottom: 0;
                 }
-
                 &__photo {
                     position: absolute;
                     top: 0;
@@ -61,7 +54,6 @@
                     width: 100%;
                     height:auto;
                     padding: 20px 25px 20px 140px;
-                    box-shadow: @shadow;
 
                     .row {
                         height: 60px;
@@ -74,12 +66,9 @@
                                 text-align-last: left;
 
                                 .name {
-                                    .medium;
                                     color: @btn_color;
                                 }
-
                                 .direction {
-                                    .medium;
                                     margin: 0;
                                 }
                             }
@@ -94,10 +83,12 @@
                                         margin-right: 10px;
                                     }
                                 } 
-
                                 .link {
-                                    .medium;
+                                    color: @font_color;
                                     text-decoration: underline;
+                                    &:hover {
+                                        color: @font_color--hover;
+                                    }
                                 }
                             }
                         }
@@ -109,7 +100,6 @@
         &__achievements {
             .worker {
                 text-align: left;
-                .medium;
                 display:none;
 
                 &__name {
@@ -143,7 +133,6 @@
             width: 100%;
 
             .row {
-                //max-width: 150px;
                 width: 100%;
                 justify-content: space-between;
                 margin: 0;
@@ -163,15 +152,22 @@
                         border-right: 10px solid @font_color;
                         margin-left: 10px;
                     }
-
                     .angle {
                         border-left: none;
                         border-right: 8px solid #fcf8feff;
                         margin: -8px 2px;
                     }
 
+                    &:hover {
+                        background-color: @font_color;
+                        .btn__angle {
+                            border-right: 10px solid #fff;
+                        }
+                        .angle {
+                            border-right: 8px solid @font_color;
+                        }
+                    }
                 }
-
                 &--next {
                     .btn__angle {
                         margin-left: 10px;
@@ -179,17 +175,23 @@
                     .angle {
                         border-left: 8px solid @font_color;
                     }
+                    &:hover {
+                        background-color: #fcf8feff;
+                        .btn__angle {
+                            border-left: 10px solid @font_color;
+                        }
+                        .angle {
+                            border-left: 8px solid #fcf8feff;
+                        }
+                    }
                 }
             }
 
             &__number {
-                .medium;
                 font-size: 16px;
                 display: inline-block;
             }
-
             &__all {
-                .medium;
                 font-size: 13px;
                 display: inline-block;
             }
@@ -199,7 +201,6 @@
                 
                 .divider {
                     display: inline-block;
-                    .medium;
                     font-size: 17px;
                     margin-left: 0;
                     margin-right: 0;
@@ -210,6 +211,7 @@
     }
 
     .mark {
-        margin-top: -350px;
+        transform: translateY(-50%);
+        top: 50%;
     }
 }
