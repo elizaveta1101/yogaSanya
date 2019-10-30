@@ -1,0 +1,193 @@
+@import "variables";
+
+@media @phone {
+
+}
+
+@media @tablet {
+    .team {
+        margin-top: 100px;
+    
+        &__background {
+            &--right {
+                display: none;
+            }
+        }
+        &__data {
+            max-width: 650px;
+    
+            &__header {
+                font-size: 21px;
+                font-weight: 700;
+                margin-bottom: 65px;
+            }
+            &__workers {
+                .worker {
+                    position: relative;
+                    margin-bottom: 30px;
+                    height: 160px; //??
+    
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &__photo {
+                        width: 15%;
+                    }
+    
+                    &__card {
+                        position: absolute;
+                        top: 50px;
+                        left: 25px;
+                        background-color: #fff;
+                        max-width: 400px;
+                        max-height: 110px;
+                        width: 100%;
+                        height:auto;
+                        padding: 20px 25px 20px 140px;
+    
+                        .row {
+                            height: 60px;
+                            margin-bottom: 10px;
+    
+                            .side {
+                                font-size: 12px;
+    
+                                &--left {
+                                    text-align-last: left;
+    
+                                    .name {
+                                        color: @btn_color;
+                                    }
+                                    .direction {
+                                        margin: 0;
+                                    }
+                                }
+    
+                                &--right {
+                                    text-align: right;
+    
+                                    a .icon {
+                                        margin-bottom: 40px;
+    
+                                        &--left {
+                                            margin-right: 10px;
+                                        }
+                                    } 
+                                    .link {
+                                        color: @font_color;
+                                        text-decoration: underline;
+                                        &:hover {
+                                            color: @font_color--hover;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }   
+            }
+    
+            &__achievements {
+                .worker {
+    
+                    &__name {
+                        .bold;
+                        font-size: 18px;
+                        margin-bottom: 10px;
+                        margin-top: 50px;
+                    }
+    
+                    &__experience {
+                        font-size: 14px;
+                        color: @btn_color;
+                        margin-bottom: 25px;
+                    }
+    
+                    &__achievements {
+                        font-size: 12px;
+                    }
+    
+                    &--visible {
+                        display: block;
+                    }
+                }
+            }
+    
+            .slider {
+                margin-top: 40px;
+                float: right;
+                margin-right: 45px;
+                max-width: 150px;
+                width: 100%;
+    
+                .row {
+                    width: 100%;
+                    justify-content: space-between;
+                    margin: 0;
+                }
+                
+                &__btn {
+                    width: 45px;
+                    height: 30px;
+    
+                    &--prev {
+                        background-color: #fcf8feff;
+                        
+                        .btn__angle {
+                            border-left: none;
+                            border-right: 10px solid @font_color;
+                            margin-left: 10px;
+                        }
+                        .angle {
+                            border-left: none;
+                            border-right: 8px solid #fcf8feff;
+                            margin: -8px 2px;
+                        }
+    
+                        &:hover {
+                            background-color: @font_color;
+                            .btn__angle {
+                                border-right: 10px solid #fff;
+                            }
+                            .angle {
+                                border-right: 8px solid @font_color;
+                            }
+                        }
+                    }
+                    &--next {
+                        .btn__angle {
+                            margin-left: 10px;
+                        }
+                        .angle {
+                            border-left: 8px solid @font_color;
+                        }
+                        &:hover {
+                            background-color: #fcf8feff;
+                            .btn__angle {
+                                border-left: 10px solid @font_color;
+                            }
+                            .angle {
+                                border-left: 8px solid #fcf8feff;
+                            }
+                        }
+                    }
+                }
+    
+                &__number {
+                    font-size: 16px;
+                }
+                &__all {
+                    font-size: 13px;
+                }
+                &__info {
+                    max-width: 35px;
+                    width: 100%;
+                    
+                    .divider {
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+    }
+}
