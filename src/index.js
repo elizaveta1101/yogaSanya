@@ -1,3 +1,4 @@
+//-----------------------------вот эта функция----------------------
 //--------------------выпадающее главное меню-------------
 function dropdown () {
     const btn = document.getElementById('dropdownMenuButton');
@@ -13,7 +14,7 @@ function dropdown () {
     });
 }
 
-
+//----------------------------------и вот эта функция------------------------
 //-------------меняем размер карточки со стоимостью абонемента при наведении
 function changeCardSize () {
     const cards = document.querySelectorAll('.subscriptionCard');
