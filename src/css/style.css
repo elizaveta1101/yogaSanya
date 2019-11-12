@@ -49,7 +49,6 @@ img {
 .bold {
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
-  color: #8B7EAC;
 }
 * {
   font-family: 'Open Sans', sans-serif;
@@ -60,6 +59,7 @@ img {
   background-color: #E65C7B;
   color: #fff;
   border: none;
+  color: #8B7EAC;
 }
 .btn__angle {
   border: 10px solid transparent;
@@ -91,7 +91,6 @@ img {
   background: none;
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
-  color: #8B7EAC;
   font-size: 30px;
   color: rgba(174, 164, 200, 0.5);
   padding: 0;
@@ -348,7 +347,6 @@ img {
 .directionCard__info__text h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
-  color: #8B7EAC;
   font-size: 16px;
 }
 .directionCard__info__text p {
@@ -551,7 +549,6 @@ img {
 .team__data__achievements .worker__name {
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
-  color: #8B7EAC;
   font-size: 18px;
   margin-bottom: 10px;
   margin-top: 50px;

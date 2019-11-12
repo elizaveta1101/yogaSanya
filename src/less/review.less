@@ -6,8 +6,6 @@
 
     &__header {
         font-size: 30px;
-        text-align: center;
-        margin-bottom: 65px;
     }
 
     &__slider {
@@ -21,17 +19,12 @@
             height: 400px;
         }
         &__btn {
-            position: absolute;
-            z-index:9999;
             width: 45px;
             height: 30px;
             background-color: @font_color;
-            border: none;
-            top: 50%;
 
             &--prev {
-                left: -2%;
-
+                
                 .btn__angle {
                     border-left: none;
                     border-right: 10px solid #fff;
@@ -42,7 +35,6 @@
                     border-right: 8px solid @font_color;
                     margin: -8px 2px;
                 }
-
                 &:hover {
                     background-color: @font_color--hover;
                     .angle {
@@ -51,8 +43,6 @@
                 }
             }
             &--next {
-                right: -2%;
-
                 .btn__angle {
                     margin-left: 10px;
                 }
