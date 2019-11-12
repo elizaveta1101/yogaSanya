@@ -49,6 +49,7 @@ img {
 .bold {
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
+  color: #8B7EAC;
 }
 * {
   font-family: 'Open Sans', sans-serif;
@@ -59,7 +60,6 @@ img {
   background-color: #E65C7B;
   color: #fff;
   border: none;
-  color: #8B7EAC;
 }
 .btn__angle {
   border: 10px solid transparent;
@@ -91,6 +91,7 @@ img {
   background: none;
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
+  color: #8B7EAC;
   font-size: 30px;
   color: rgba(174, 164, 200, 0.5);
   padding: 0;
@@ -347,6 +348,7 @@ img {
 .directionCard__info__text h3 {
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
+  color: #8B7EAC;
   font-size: 16px;
 }
 .directionCard__info__text p {
@@ -549,6 +551,7 @@ img {
 .team__data__achievements .worker__name {
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
+  color: #8B7EAC;
   font-size: 18px;
   margin-bottom: 10px;
   margin-top: 50px;
@@ -588,12 +591,12 @@ img {
 .team__data .slider__btn--prev .btn__angle {
   border-left: none;
   border-right: 10px solid #8B7EAC;
-  margin-left: 10px;
+  margin-right: 11px;
 }
-.team__data .slider__btn--prev .angle {
+.team__data .slider__btn--prev .btn__angle .angle {
   border-left: none;
   border-right: 8px solid #fcf8feff;
-  margin: -8px 2px;
+  margin: -8px 13px;
 }
 .team__data .slider__btn--prev:hover {
   background-color: #8B7EAC;
@@ -650,6 +653,7 @@ img {
   font-size: 30px;
   text-align: center;
   margin-bottom: 65px;
+  font-weight: 700;
 }
 .review__slider .row {
   max-width: 900px;
@@ -674,12 +678,12 @@ img {
 .review__slider__btn--prev .btn__angle {
   border-left: none;
   border-right: 10px solid #fff;
-  margin-left: 10px;
+  margin-right: 11px;
 }
-.review__slider__btn--prev .angle {
+.review__slider__btn--prev .btn__angle .angle {
   border-left: none;
   border-right: 8px solid #8B7EAC;
-  margin: -8px 2px;
+  margin: -8px 14px;
 }
 .review__slider__btn--prev:hover {
   background-color: #6D4793;
