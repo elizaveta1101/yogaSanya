@@ -10,7 +10,7 @@
     <title>Yoga</title>
 </head>
 <body>
-    <div class="header container" id="header">
+    <header class="container" id="header">
         <div class="header__content container--small">
             <div class="row header__bar">
                 <div class="header__bar__menu">
@@ -40,10 +40,8 @@
                 <h1> Y O G A </h1>
             </div>
             <div class="header__btn">
-                <button class="header__btn--size btn--coral">
-                    <div class="btn__angle">
-                        <div class="angle"></div>
-                    </div>
+                <button class="header__btn--size my_btn btn--coral">
+                    <div class="angle"></div>
                 </button>
                 <p>Запишитесь на бесплатное пробное занятие</p>
             </div>
@@ -59,7 +57,7 @@
             </div>
         </div>
         <span class="mark">01<hr></span>
-    </div>
+    </header>
     <div class="directions container" id="directions">
         <div class="container--small pattern">
             <h2 class="pattern__header">Направления</h2>
@@ -76,10 +74,8 @@
                                     <p class="text__name">Инструктор<br>Емельянова Полина</p>
                                 </div>
                             </div>
-                            <button class="directionCard__btn">
-                                    <div class="btn__angle">
-                                        <div class="angle"></div>  
-                                    </div>                                  
+                            <button class="directionCard__btn my_btn">
+                                        <div class="angle"></div>               
                             </button>
                         </div>
                     </div>
@@ -96,10 +92,8 @@
                                         <p class="text__name">Инструктор<br>Емельянова Полина</p>
                                     </div>
                                 </div>
-                                <button class="directionCard__btn">
-                                        <div class="btn__angle">
-                                            <div class="angle"></div>  
-                                        </div>                                  
+                                <button class="directionCard__btn my_btn">
+                                    <div class="angle"></div>               
                                 </button>
                             </div>
                         </div>
@@ -115,10 +109,8 @@
                                         <p class="text__name">Инструктор<br>Емельянова Полина</p>
                                     </div>
                                 </div>
-                                <button class="directionCard__btn">
-                                        <div class="btn__angle">
-                                            <div class="angle"></div>  
-                                        </div>                                  
+                                <button class="directionCard__btn my_btn">
+                                    <div class="angle"></div>               
                                 </button>
                             </div>
                         </div>
@@ -208,16 +200,16 @@
         <div class="team__data container--small">
             <h2 class="team__data__header">Наша команда</h2>
             <div class="row">
-                <div class="team__data__workers col-lg-6">
+                <div class="team__data__workers col-lg-6 col-md-6">
                     <div class="worker worker--1">
                         <img class="worker__photo" src="./img/team/1.png" alt="">
                         <div class="worker__card card--shadow">
                             <div class="row">
-                                <div class="side side--left col-lg-6">
+                                <div class="side side--left col-lg-6 col-md-6">
                                     <p class="name">Инструктор<br>Серёжа Попов</p>
                                     <p class="direction">Хатха-йога</p>
                                 </div>
-                                <div class="side side--right col-lg-6">
+                                <div class="side side--right col-lg-6 col-md-6">
                                     <a href="#"><img class="icon icon--left" src="./img/vk.png" alt=""></a>
                                     <a href="#"><img class="icon"src="./img/twitter.png" alt=""></a>
                                     <a href="#" class="link">Смотреть</a>
@@ -229,11 +221,11 @@
                         <img class="worker__photo" src="./img/team/1.png" alt="">
                         <div class="worker__card card--shadow">
                             <div class="row">
-                                <div class="side side--left col-lg-6">
+                                <div class="side side--left col-lg-6 col-md-6">
                                     <p class="name">Инструктор<br>Серёжа Попов</p>
                                     <p class="direction">Хатха-йога</p>
                                 </div>
-                                <div class="side side--right col-lg-6">
+                                <div class="side side--right col-lg-6 col-md-6">
                                     <a href="#"><img class="icon icon--left" src="./img/vk.png" alt=""></a>
                                     <a href="#"><img class="icon"src="./img/twitter.png" alt=""></a>
                                     <a href="#" class="link">Смотреть</a>
@@ -245,11 +237,11 @@
                         <img class="worker__photo" src="./img/team/1.png" alt="">
                         <div class="worker__card card--shadow">
                             <div class="row">
-                                <div class="side side--left col-lg-6">
+                                <div class="side side--left col-lg-6 col-md-6">
                                     <p class="name">Инструктор<br>Серёжа Попов</p>
                                     <p class="direction">Хатха-йога</p>
                                 </div>
-                                <div class="side side--right col-lg-6">
+                                <div class="side side--right col-lg-6 col-md-6">
                                     <a href="#"><img class="icon icon--left" src="./img/vk.png" alt=""></a>
                                     <a href="#"><img class="icon"src="./img/twitter.png" alt=""></a>
                                     <a href="#" class="link">Смотреть</a>
@@ -259,25 +251,21 @@
                     </div>
                     <div class="slider">
                             <div class="row">
-                                <button class="slider__btn slider__btn--prev">
-                                    <div class="btn__angle">
-                                        <div class="angle"></div>  
-                                    </div>  
+                                <button class="slider__btn slider__btn--prev btn--prev my_btn">
+                                    <div class="angle"></div>  
                                 </button>
                                 <div class="slider__info">
                                     <div class="slider__number">1</div>
                                     <div class="divider">/</div>
                                     <div class="slider__all">9</div>
                                 </div>
-                                <button class="slider__btn slider__btn--next">
-                                    <div class="btn__angle">
-                                        <div class="angle"></div>  
-                                    </div> 
+                                <button class="slider__btn slider__btn--next btn--next my_btn">
+                                    <div class="angle"></div>
                                 </button>
                             </div>  
                         </div>
                 </div>
-                <div class="team__data__achievements col-lg-6">
+                <div class="team__data__achievements col-lg-6 col-md-6">
                     <div class="worker worker--1 worker--visible">
                         <h3 class="worker__name">Серёжа Попов</h3>
                         <p class="worker__experience">Опыт преподавания: 8 лет</p>
@@ -330,10 +318,8 @@
             <h3 class="review__header">Отзывы</h3>
             <div class="review__slider">
                 <div class="row">
-                    <button class="review__slider__btn review__slider__btn--prev">
-                        <div class="btn__angle">
-                            <div class="angle"></div>  
-                        </div>  
+                    <button class="review__slider__btn review__slider__btn--prev btn--prev my_btn">
+                        <div class="angle"></div>  
                     </button>
                     <div class="review__slider__card card--left card--shadow">
                         <img class="card__header" src="./img/“.png">
@@ -383,10 +369,13 @@
                             </div>
                         </div>
                     </div>
-                    <button class="review__slider__btn review__slider__btn--next">
-                        <div class="btn__angle">
-                            <div class="angle"></div>  
-                        </div>  
+                    <div class="slider__info">
+                        <div class="slider__number">1</div>
+                        <div class="divider">/</div>
+                        <div class="slider__all">9</div>
+                    </div>
+                    <button class="review__slider__btn review__slider__btn--next btn--next my_btn">
+                        <div class="angle"></div>
                     </button>
                 </div>
             </div>
@@ -397,7 +386,7 @@
         <div class="container--small">
             <div class="side side--left col-lg-6">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-4">
                         <div class="address">
                             <div class="address__header">Адрес:</div>
                             <div class="address__place">Московский проспект, 22</div>
@@ -412,7 +401,7 @@
                             <a href="#"><img src="./img/facebook.png" alt=""></a>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="phone">
                             <div class="phone__header">Телефон:</div>
                             <div class="phone__number">8 (812) 690-10-10</div>
@@ -434,16 +423,16 @@
             </div>
         </div>
     </div>
-    <div class="footer container">
+    <footer class="container">
         <div class="row">
-            <div class="col-lg-2 offset-lg-2">
+            <div class="col-lg-2 offset-lg-2 col-md-2 offset-md-1">
                 <a href="#" class="link">Yogaspb.com</a>
             </div>
-            <div class="col-lg-2 offset-lg-4">
+            <div class="col-lg-2 offset-lg-4 col-md-4 offset-md-5">
                 <a href="#" class="politic">© 2018   Все права защищены</a>
             </div>
         </div>       
-    </div>
+    </footer>
 
     <!------------- модальные окна --------------->
     <div class="trial__lesson">

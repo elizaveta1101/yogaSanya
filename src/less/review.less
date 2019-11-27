@@ -1,7 +1,7 @@
 @import "variables";
 
 .review {
-    margin: 140px auto;
+    margin-top: 50px;
     position: relative;
 
     &__header {
@@ -12,6 +12,9 @@
     }
 
     &__slider {
+        .slider__info {
+            display: none;
+        }
 
         .row {
             max-width: 900px;
@@ -31,40 +34,24 @@
             top: 50%;
 
             &--prev {
-                left: -2%;
-
-                .btn__angle {
-                    border-left: none;
-                    border-right: 10px solid #fff;
-                    margin-right: 11px;
-                    .angle {
-                        border-left: none;
-                        border-right: 8px solid @font_color;
-                        margin: -8px 14px;
-                    }
-                }                
+                left: -2%;  
+                background-color: @font_color;
+                .angle {
+                    border-color: #fff;
+                }      
 
                 &:hover {
                     background-color: @font_color--hover;
-                    .angle {
-                        border-right: 8px solid @font_color--hover;
-                    }
+                    
                 }
             }
             &--next {
                 right: -2%;
 
-                .btn__angle {
-                    margin-left: 10px;
-                }
-                .angle {
-                    border-left: 8px solid @font_color;
-                }
-
                 &:hover {
                     background-color: @font_color--hover;
                     .angle {
-                        border-left: 8px solid @font_color--hover;
+                        border-color: #fff;
                     }
                 }
             }

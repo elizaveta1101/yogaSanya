@@ -7,7 +7,6 @@
 }
 .pattern {
     position: relative;
-    padding-bottom: 100px;
     height: auto;
     background: url(../img/pattern.png) center center no-repeat;
     background-size: 97% 100%;
@@ -47,9 +46,6 @@
 
             &__btn {
                 flex-basis: 15%;
-                .btn__angle {
-                    margin-left: 45%;
-                }
             }
         }
     }
@@ -57,22 +53,21 @@
     &--right {
         .directionCard {
             margin-bottom: 25px;
-            &__info { 
-                padding: 35px 0px 14px 36px;
-            }
 
             &__btn {
                 width: 45px;
-                height: 30px;
-                margin-top: 115px;
-                margin-right: 35px;
-                .btn__angle {
-                    margin-left: 40%;
-                }                
-            }            
+                height: 30px;                
+            } 
+            
+            &__row img {
+                width: 220px;
+            }
         }
         .card--shadow {
             display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 0 30px 30px;
         }
     }
 
@@ -82,8 +77,7 @@
         border:none;
         font-size: 12px;
         text-align: center;
-        margin-top: 20px;
-        padding: 0;
+        margin-top: 4px;
         background-color: #fff;
         &:hover {
             background-color: @font_color;
@@ -106,7 +100,7 @@
     {
         flex-basis: 85%;
         &__text {
-        
+            
             h3 {
                 .bold;
                 font-size: 16px;
@@ -116,6 +110,7 @@
             }
             .text__name {
                 color: @btn_color;
+                margin: 0;
             }
         }
     }
@@ -123,22 +118,10 @@
         border: none;
         padding: 0;
         background-color: @font_color;
-    
-        .btn__angle {
-            border: 8px solid transparent;
-            border-left: 8px solid #fff;
-        }
-        
-        .angle {
-            border: 6px solid transparent;
-            border-left: 6px solid @font_color;  
-            margin: -6px -8px;
-        }
-
         &:hover {
             background-color: @font_color--hover;
             .angle {
-                border-left: 6px solid @font_color--hover;  
+                border-color: #fff;
             }
         }
     }

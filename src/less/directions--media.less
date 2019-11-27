@@ -2,17 +2,13 @@
 
 @media @phone {
     .directions {
-        height: 1150px;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .pattern {
+        height: auto;
         background: url(../img/pattern--phone.png) center left no-repeat;
         background-size: 70% 70%;
         background-position-y: 50%;
+    }
+    .pattern {
         max-width: 320px;
-        padding-left: 20px;
-        padding-right: 20px;
         
         &__background {
             top: -130px;
@@ -28,9 +24,6 @@
         &--left {
             .directionCard {
                 margin-bottom: 25px;
-                &__info {
-                    padding: 15px 0px 0px 20px;
-                }
             }
         }
         &--right {
@@ -39,16 +32,18 @@
                     flex-direction: column;
                     img {
                         min-height: 200px;
+                        width: 100%;
                     }
                     .card--shadow {
                         display: flex;
                         flex-direction: row;
+                        padding: 0;
+                        align-items: inherit;
                     }
                 }
                 margin-bottom: 25px;
                 &__info { 
                     flex-basis: 85%;
-                    padding: 15px 0px 0px 20px;
                 }
     
                 &__btn {
@@ -69,12 +64,17 @@
         }
     }
     
-    .directionCard__info__text {
-        h3 {
-            font-size: 12px;
-        }
-        p {
-            font-size: 10px;
+    .directionCard{
+        &__info {
+            padding: 15px 0px 15px 20px;
+            &__text {
+                h3 {
+                    font-size: 12px;
+                }
+                p {
+                    font-size: 10px;
+                }
+            }
         }
     }
 }
@@ -83,8 +83,6 @@
     .pattern {
         background-size: 105% 94%;
         background-position-y: -48px;
-        padding-left: 50px;
-        padding-right: 50px;
         padding-top: 30px;
     
         &__header {
@@ -108,9 +106,8 @@
                     width: 100%;
                     height: 100%;
                 }
-    
                 &__info {
-                    padding: 15px 0px 0px 20px;
+                    padding: 17px 0px 15px 30px;
                 }
     
                 &__btn {
@@ -129,9 +126,6 @@
                 &__row img{
                     max-width: 40%;
                 }
-                &__info { 
-                    padding: 10px 0px 0px 15px;
-                }
     
                 &__btn {
                     margin-top: 75px;
@@ -140,7 +134,7 @@
             }
             .card--shadow {
                 display: flex;
-                min-width: 205px;
+                padding: 15px 0px 15px 15px;
             }
         }
     
@@ -161,6 +155,3 @@
         }
     }
 }
-
-
-

@@ -2,9 +2,8 @@
 
 .team {
     position: relative;
-    margin-top: 100px;
     text-align: center;
-    height: auto; 
+    height: 800px; 
 
     &__background {
         z-index: -9999999;
@@ -18,8 +17,10 @@
         }
     }
     &__data {
-        height: auto;
-
+        height: 100%;
+        .row {
+            height: 80%;
+        }
         &__header {
             font-size: 30px;
             font-weight: 700;
@@ -29,7 +30,8 @@
             .worker {
                 position: relative;
                 margin-bottom: 30px;
-                height: 160px;
+                max-height: 160px;
+                height: 100%;
 
                 &:last-child {
                     margin-bottom: 0;
@@ -53,15 +55,12 @@
                     padding: 20px 25px 20px 140px;
 
                     .row {
-                        height: 60px;
-                        margin-bottom: 10px;
-
+                        
                         .side {
                             font-size: 12px;
-
+                            
                             &--left {
                                 text-align-last: left;
-
                                 .name {
                                     color: @btn_color;
                                 }
@@ -72,10 +71,8 @@
 
                             &--right {
                                 text-align: right;
-
                                 a .icon {
-                                    margin-bottom: 40px;
-
+                                    margin-bottom: 40px;    
                                     &--left {
                                         margin-right: 10px;
                                     }
@@ -136,53 +133,9 @@
             }
             
             &__btn {
-                border: 1px solid @font_color;
                 width: 45px;
                 height: 30px;
-                background-color: @font_color;
-
-                &--prev {
-                    background-color: #fcf8feff;
-                    
-                    .btn__angle {
-                        border-left: none;
-                        border-right: 10px solid @font_color;
-                        margin-right: 11px;
-                        .angle {
-                            border-left: none;
-                            border-right: 8px solid #fcf8feff;
-                            margin: -8px 13px;
-                        }
-                    }
-                    
-
-                    &:hover {
-                        background-color: @font_color;
-                        .btn__angle {
-                            border-right: 10px solid #fff;
-                        }
-                        .angle {
-                            border-right: 8px solid @font_color;
-                        }
-                    }
-                }
-                &--next {
-                    .btn__angle {
-                        margin-left: 10px;
-                    }
-                    .angle {
-                        border-left: 8px solid @font_color;
-                    }
-                    &:hover {
-                        background-color: #fcf8feff;
-                        .btn__angle {
-                            border-left: 10px solid @font_color;
-                        }
-                        .angle {
-                            border-left: 8px solid #fcf8feff;
-                        }
-                    }
-                }
+                
             }
 
             &__number {
@@ -196,6 +149,10 @@
             &__info {
                 max-width: 35px;
                 width: 100%;
+                
+                div{
+                    color: @font_color;
+                }
                 
                 .divider {
                     display: inline-block;

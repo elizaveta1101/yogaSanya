@@ -1,4 +1,3 @@
-//-----------------------------вот эта функция----------------------
 //--------------------выпадающее главное меню-------------
 function dropdown () {
     const btn = document.getElementById('dropdownMenuButton');
@@ -14,38 +13,31 @@ function dropdown () {
     });
 }
 
-//----------------------------------и вот эта функция------------------------
+//--------замена класса-----
+function toggleClassCard(index, array) {
+    if (index % 3 !== 1) {
+        array[index].classList.toggle('card--small');
+        array[index].classList.toggle('card--big');
+        if (index % 3 === 0) {
+            array[index+1].classList.toggle('card--small');
+            array[index+1].classList.toggle('card--big');
+        }
+        else if (index % 3 === 2) {
+            array[index-1].classList.toggle('card--small');
+            array[index-1].classList.toggle('card--big');
+        }
+    };
+}
+
 //-------------меняем размер карточки со стоимостью абонемента при наведении
 function changeCardSize () {
     const cards = document.querySelectorAll('.subscriptionCard');
     for (let i=0; i<cards.length; i++) {
         cards[i].addEventListener('mouseenter', () => {
-            if (i % 3 !== 1) {
-                cards[i].classList.toggle('card--small');
-                cards[i].classList.toggle('card--big');
-                if (i % 3 === 0) {
-                    cards[i+1].classList.toggle('card--small');
-                    cards[i+1].classList.toggle('card--big');
-                }
-                else if (i % 3 === 2) {
-                    cards[i-1].classList.toggle('card--small');
-                    cards[i-1].classList.toggle('card--big');
-                }
-            };
+            toggleClassCard(i, cards);
         });
         cards[i].addEventListener('mouseleave', () => {
-            if (i % 3 !== 1) {
-                cards[i].classList.toggle('card--small');
-                cards[i].classList.toggle('card--big');
-                if (i % 3 === 0) {
-                    cards[i+1].classList.toggle('card--small');
-                    cards[i+1].classList.toggle('card--big');
-                }
-                else if (i % 3 === 2) {
-                    cards[i-1].classList.toggle('card--small');
-                    cards[i-1].classList.toggle('card--big');
-                }
-            };
+            toggleClassCard(i, cards);
         });
     };
 }
