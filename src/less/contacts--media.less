@@ -1,0 +1,47 @@
+@import "variables";
+
+@media @phone {
+
+}
+
+@media @tablet {
+    .contacts {
+        background-image: url(../img/footer_background.png);
+        background-size: cover;
+        width: 100%;
+        padding: 0;
+        max-height: 700px;
+        height: 100%;
+        
+        .container--small {
+            max-width: 1300px;
+            display: flex;
+            flex-direction: column-reverse;
+            padding: 0;
+    
+            .side {
+                margin: 0;
+                &--left {
+                    float: left;
+                    font-size: 14px;
+                    background-color: #8373A1;
+                    padding: 50px 0 0 80px;
+                }
+                &--right {
+                    float: right;
+                    max-width: 450px;
+                    margin: 0 auto 50px;                    
+                }
+            }
+        }
+    }
+    div {
+        color: #fff;
+    }
+    .icons {
+        display: none;
+    }
+}
+    
+
+

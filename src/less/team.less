@@ -2,48 +2,40 @@
 
 .team {
     position: relative;
-    margin-top: 100px;
     text-align: center;
-    height: auto; 
+    height: 800px; 
 
     &__background {
         z-index: -9999999;
         position: absolute;
-        
+        top: 0;
         &--left {
-            top: 0;
             left: 0;
         }
-
         &--right {
-            top: 0;
             right: 0;
         }
     }
-
     &__data {
-        margin-left: auto;
-        margin-right: auto;
-        max-height: 700px;
-        max-width: 970px;
+        height: 100%;
+        .row {
+            height: 80%;
+        }
         &__header {
             font-size: 30px;
-            color: @font_color;
-            .medium;
             font-weight: 700;
             margin-bottom: 65px;
         }
-
         &__workers {
             .worker {
                 position: relative;
                 margin-bottom: 30px;
-                height: 160px;
+                max-height: 160px;
+                height: 100%;
 
                 &:last-child {
                     margin-bottom: 0;
                 }
-
                 &__photo {
                     position: absolute;
                     top: 0;
@@ -61,43 +53,36 @@
                     width: 100%;
                     height:auto;
                     padding: 20px 25px 20px 140px;
-                    box-shadow: @shadow;
 
                     .row {
-                        height: 60px;
-                        margin-bottom: 10px;
-
+                        
                         .side {
                             font-size: 12px;
-
+                            
                             &--left {
                                 text-align-last: left;
-
                                 .name {
-                                    .medium;
                                     color: @btn_color;
                                 }
-
                                 .direction {
-                                    .medium;
                                     margin: 0;
                                 }
                             }
 
                             &--right {
                                 text-align: right;
-
                                 a .icon {
-                                    margin-bottom: 40px;
-
+                                    margin-bottom: 40px;    
                                     &--left {
                                         margin-right: 10px;
                                     }
                                 } 
-
                                 .link {
-                                    .medium;
+                                    color: @font_color;
                                     text-decoration: underline;
+                                    &:hover {
+                                        color: @font_color--hover;
+                                    }
                                 }
                             }
                         }
@@ -109,7 +94,6 @@
         &__achievements {
             .worker {
                 text-align: left;
-                .medium;
                 display:none;
 
                 &__name {
@@ -143,53 +127,22 @@
             width: 100%;
 
             .row {
-                //max-width: 150px;
                 width: 100%;
                 justify-content: space-between;
                 margin: 0;
             }
             
             &__btn {
-                border: 1px solid @font_color;
                 width: 45px;
                 height: 30px;
-                background-color: @font_color;
-
-                &--prev {
-                    background-color: #fcf8feff;
-                    
-                    .btn__angle {
-                        border-left: none;
-                        border-right: 10px solid @font_color;
-                        margin-left: 10px;
-                    }
-
-                    .angle {
-                        border-left: none;
-                        border-right: 8px solid #fcf8feff;
-                        margin: -8px 2px;
-                    }
-
-                }
-
-                &--next {
-                    .btn__angle {
-                        margin-left: 10px;
-                    }
-                    .angle {
-                        border-left: 8px solid @font_color;
-                    }
-                }
+                
             }
 
             &__number {
-                .medium;
                 font-size: 16px;
                 display: inline-block;
             }
-
             &__all {
-                .medium;
                 font-size: 13px;
                 display: inline-block;
             }
@@ -197,9 +150,12 @@
                 max-width: 35px;
                 width: 100%;
                 
+                div{
+                    color: @font_color;
+                }
+                
                 .divider {
                     display: inline-block;
-                    .medium;
                     font-size: 17px;
                     margin-left: 0;
                     margin-right: 0;
@@ -207,5 +163,10 @@
                 }
             }
         }
+    }
+
+    .mark {
+        transform: translateY(-50%);
+        top: 50%;
     }
 }
